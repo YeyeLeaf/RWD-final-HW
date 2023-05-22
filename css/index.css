@@ -1,0 +1,251 @@
+.ftr_title {
+    position: relative;
+}
+.ftr_title h2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 56px;
+}
+.ftr_title .line:first-child {
+    display: inline-block;
+    width: 11%;
+    border: 0.5px solid #3D1101;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+}
+.ftr_title .line:last-child {
+    display: inline-block;
+    width: 11%;
+    border: 0.5px solid #3D1101;
+    position: absolute;
+    top: 50%;
+    right: 28%;
+}
+.feature {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 56px;
+}
+.feature img {
+    border-radius: 50%;
+}
+.card {
+    width: 24.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h3 {
+    font-size: 18px;
+    padding: 20px 0;
+}
+.card p {
+    line-height: 20px;
+}
+@media (max-width: 820px) {
+    .ftr_title .line:first-child {
+        left: 20%;
+    }
+    .ftr_title .line:last-child {
+        right: 20%;
+    }
+}
+@media (max-width: 569px){
+    .ftr_title .line:first-child, .ftr_title .line:last-child {
+        display: none;
+    }
+    .feature {
+        display: block;
+    }
+    .feature img {
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .feature .card{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .feature .card h3{
+        text-align: center;
+    }
+    .card p {
+        margin-bottom: 20px;
+    }
+}
+.chef {
+    display: flex;
+    background-color: #3D1101;
+    color: #EFE9E7;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.chef h3 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 1em;
+}
+.chef p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.chef div {
+    margin: auto 25px;
+}
+.chef img {
+    width: 48%;
+    height: auto;
+}
+@media (max-width: 569px){
+    .chef {
+        display: block;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .chef img {
+        width: 100%;
+        height: auto;
+    }
+    .chef p, .chef h3 {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+}
+.ex_title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 56px;
+    
+}
+.experience {
+    background-color: #efe9e7;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.experience .infor {
+    display: flex;
+    align-items: start;
+}
+.experience img {
+    border-radius: 50%;
+}
+.experience h3 {
+    font-size: 18px;
+    padding: 25px 10px;
+}
+.experience p,  .experience span{
+    line-height: 24px;
+}
+.experience p {
+    margin: 0 10px;
+}
+.experience span {
+    display: block;
+    margin: 25px 10px;
+    float: right;
+}
+@media (max-width: 569px){
+    .experience {
+        display: block;
+    }
+    .experience .comment{
+        display: block;
+    }
+}
+.booking {
+    background-color: rgb(250, 250, 250, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.book_title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 56px;
+    background-color: rgb(250, 250, 250, 0.7);
+}
+.booking img {
+    width: 48%;
+}
+.booking form {
+    width: 48%;
+}
+.booking > form > input, .booking > form label {
+    display: block;
+    width: 95%;
+    margin: 10px 0;
+}
+.booking > form > input {
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.booking > form label {
+    color: #3D1101;
+    font-size: 14px;
+    font-weight: 600;
+}
+.booking form {
+    position: relative;
+}
+.booking .radio label, .booking .radio input{
+    display: inline;
+}
+.booking .radio input {
+    margin-right: 30px;
+}
+.booking input[type="button"] {
+    width: auto;
+    display: inline;
+
+}
+.booking .cancelBtn {
+    background-color: #a09e9e;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    color: white;
+}
+.booking .submitBtn {
+    background-color: #f56c23;
+    margin-left: 5px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 820px) {
+    .booking .radio input {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 569px) {
+    .booking {
+        display: block;
+    }
+    .booking img, .booking form {
+        width: 100%;
+    }
+}
+.button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.booking .cancelBtn:hover, .booking .submitBtn:hover {
+    opacity: 0.75;
+}
+.booking .cancelBtn:active, .booking .submitBtn:active {
+    font-weight: bold;
+}

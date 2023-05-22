@@ -1,0 +1,93 @@
+.title {
+    margin: 56px auto;
+    text-align: center;
+}
+.title h2 {
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 20px;
+}
+.login-form {
+    margin: 0 auto;
+    max-width: 25%;
+    min-width: 300px;
+    border-top: 3px solid #ff5e45;
+    padding: 20px;
+    box-shadow: 3px 3px 5px rgb(175, 173, 173);
+    box-sizing: border-box;
+}
+.login-form label {
+    display: block;
+    line-height: 20px;
+    margin: 5px 0;
+}
+.login-form input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.login-form legend {
+    text-align: center;
+    font-weight: 900;
+}
+.mail {
+    position: relative;
+    display:inline-block;
+}
+.mail:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0e0";
+    font-size: 14px;
+    color: #9e8880;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pwd {
+    position: relative;
+    display:inline-block;
+}
+.pwd:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f023";
+    font-size: 14px;
+    color: #9e8880;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login-form a {
+    color: #FF5E45;
+    text-decoration: none;
+    font-size: 14px;
+}
+.login-form .button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.login-form .regisBtn, .login-form .loginBtn {
+    width: 40%;
+    display: block;
+    color: white;
+    border-radius: 5%;
+    border: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.login-form .regisBtn {
+    background-color: #a09e9e;
+}
+.login-form .loginBtn {
+    background-color: #f56c23;
+}
+.login-form .regisBtn:hover, .login-form .loginBtn:hover {
+    opacity: 0.75;
+}
+.login-form .regisBtn:active, .login-form .loginBtn:active {
+    font-weight: bold;
+}
